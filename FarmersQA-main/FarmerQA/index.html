@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feed</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <div class="imgbox3 sidebarToggler">
+                <img src="images/profile.svg" alt="" width="20">
+            </div>
+            <h1>FarmeraQA</h1>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fa fa-home" style="font-size: 25px;"></i>  Home </a></li>
+            <li><a href="#"><i class="fa fa-edit" style="font-size: 20px;"></i>  Questions </a></li>
+            <li><a href="#"><i class="fa fa-bell" style="font-size: 20px;"></i>  Notifications </a></li>
+            <li><a href="#"><i class="fa fa-envelope" style="font-size: 20px;"></i>  Messages </a></li>
+        </ul>
+        <div class="message-box">
+            <div class="message-header">
+              <h2>Message Box</h2>
+              <button class="close-button">&times;</button>
+            </div>
+            <div class="message-body">
+              <p>This is a message box. You can use it to display important information to your users.</p>
+            </div>
+          </div>
+        <div class="searchIcon">
+            <img src="images/search.svg" alt="" width="19">
+        </div>
+    </header>
+    <div class="mobileSidebar">
+        <div class="top_section_sidebar">
+            <div class="userInfo">
+                <div class="imgbox4">
+                    <a href="#"><img src="images/ken.jfif" alt=""></a>
+                </div>
+                <h3>Ken Eugene</h3>
+                
+            </div>
+            <div class="cross">
+                <i class="fa fa-close " style="color: white;"></i>
+            </div>
+        </div>
+        <hr>
+        <ul class="sidebarList">
+            <li><a href=""><i class="fa fa-bar-chart"></i> Stats</a></li>
+            <li><a href=""><i class="fa fa-bookmark"></i> Bookmarked</a></li>
+            <li><a href=""><i class="fa fa-file"></i> Drafts</a></li>
+            <li><a href=""><i class="fa fa-plus"></i> Add Topics</a></li>
+        </ul>
+        <hr>
+        <div class="user-interface">
+            <button id="accountButton">Account</button>
+            <button id="settingsButton">Settings</button>
+          </div>
+          
+          <div id="accountInformation" class="hidden">
+            <!-- User account information goes here -->
+          </div>
+          
+          <div id="settings" class="hidden">
+            <!-- User settings go here -->
+          </div>
+        <hr>
+        <ul class="sidebarList">
+            <li><a href=""><i class="fa fa-change-mode"></i> Change Mode</a></li>
+            <li><a href=""><i class="fa fa-sign-out"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div class="searchSidebar">
+        <div class="top_section_searchBar">
+            <div class="back">
+                <img src="images/back.svg" alt="" width="26">
+            </div>
+            <form action="#">
+                <input type="text" name="" id="searchInput" placeholder="Search Uwrite...">
+                <button type="submit" id="searchBtn"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <hr>
+    </div>
+    <div class="desktopSuperContainer">
+        <div class="leftOfDesktop">
+            <div class="top_section_sidebar">
+                <div class="userInfo">
+                    <div class="imgbox4">
+                        <a href="#"><img src="images/ken.jfif" alt="" width="46" height="46" style="border-radius:50%; object-fit: cover; object-position: top;"></a>
+                    </div>
+                    <h3>Ken Eugene</h3>
+                </div>
+                <div class="cross">
+                    <i class="fa fa-close " style="color: white;"></i>
+                </div>
+            </div>
+            <hr>
+            <ul class="sidebarList">
+                <li><a href=""><i class="fa fa-bar-chart"></i> Stats</a></li>
+                <li><a href=""><i class="fa fa-bookmark"></i> Bookmarked</a></li>
+                <li><a href=""><i class="fa fa-file"></i> Drafts</a></li>
+                <li><a href=""><i class="fa fa-plus"></i> Add Topics</a></li>
+            </ul>
+            <hr>
+            <ul class="sidebarList">
+                <li><a href="http://127.0.0.1:5500/sign%20up/index.html"><i class="fa fa-user"></i> Accounts</a></li>
+                <li><a href=""><i class="fa fa-lock"></i> Privacy</a></li>
+            </ul>
+            <hr>
+            <ul class="sidebarList">
+                <li><a href=""><i class="fa fa-change-mode"></i> Change Mode</a></li>
+                <li><a href=""><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+        </div>
+        <div class="content_container">
+            <div class="askQuestion">
+                <a href="#">What is your question Ken ?</a>
+                    </div>
+                      <div class="content">
+                      <div class="top_box">
+                         <div class="author_info">
+                        <div class="imgbox">
+                            <img src="images/1.jfif" alt="">
+                        </div>
+                        <div class="author_name">
+                            <h1>Francis Muturi</h1>
+                            <h5 class="credential">Cofee Farming</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/followers.svg" alt="" width="25" title="Follow"></a>
+                </div>
+                <div class="blog_heading">
+                    <h2>Cofee Farming</h2>
+                </div>
+                <div class="blog_content" id="test">
+                    <p>Am having issues with my cofee trees, what could be the problem</p>
+
+                    <img src="images/coffee.jfif" alt="">
+                </div>
+                <div class="bottom_box">
+                    <div class="like_box">
+                        <button id="likeButton">Like</button>
+                                <div id="likeCount">0 Likes</div>
+                    </div>
+                    <div class="share_box"><img src="images/share.svg" alt="" width="25" title="share"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="top_box">
+                    <div class="author_info">
+                        <div class="imgbox">
+                            <img src="images/tonystark.jpg" alt="">
+                        </div>
+                        <div class="author_name">
+                            <h1>Tony Otieno</h1>
+                            <h5 class="credential">Dairy Farmer</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/followers.svg" alt="" width="25" title="Follow"></a>
+                </div>
+                <div class="blog_heading">
+                    <h2>Did you know</h2>
+                </div>
+                <div class="blog_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt pariatur, debitis ipsum
+                        facilis id magni maiores laudantium nihil dolorum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis error atque odio architecto,
+                        veniam
+                        ipsam nisi fugiat voluptate itaque unde ea aliquam voluptates eaque et minus temporibus
+                        inventore
+                        maiores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis dolores
+                        veritatis
+                        suscipit deleniti, saepe cumque reprehenderit error aliquid sunt.</p>
+
+                </div>
+                             <div class="bottom_box">
+                              <div class="like_box">
+                                <button id="likeButton">Like</button>
+                                <div id="likeCount">0 Likes</div>
+                                
+                                 </div>
+                                 <div class="share_box"><img src="images/share.svg" alt="" width="25" title="share"></div>
+
+                                </div>
+                        </div>
+                                       <div class="content">
+                            <div class="top_box">
+                                  <div class="author_info">
+                        <div class="imgbox">
+                            <img src="images/Amy_Baker25.jpg" alt="">
+                        </div>
+                        <div class="author_name">
+                            <h1>Mercy Muthoni</h1>
+                            <h5 class="credential">Banana Farming</h5>
+                        </div>
+                               </div>
+                                 <a href="#"><img src="images/followers.svg" alt="" width="25" title="Follow"></a>
+                                   </div>
+                                 <div class="blog_heading">
+                                            <h2>Having Problems with my banana</h2>
+                </div>
+                <div class="blog_content">
+                    <p>I have been a banana farmer for the past three years and recentrly....</p>
+
+                    <img src="images/banana.jfif" alt="">
+
+
+                </div>
+                <div class="bottom_box">
+                    <div class="like_box">
+                        <button id="likeButton">Like</button>
+                                <div id="likeCount">0 Likes</div>
+                    </div>
+                    <div class="share_box"><img src="images/share.svg" alt="" width="25" title="share"></div>
+                </div>
+                   </div>
+                    <div class="container">
+                      <div class="item">
+                         <div class="FollowProfilesContainer">
+                             <h2>People You May Follow</h2>
+                                 <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                            <div class="SliderTopSection">
+                                <div class="imgbox5">
+                                    <a href="#"><img src="images/ken" alt="" width="20"></a>
+                                </div>
+                            </div>
+                            <div class="sliderUserInfo">
+                                <h3><a href="">John Kiptanui</a></h3>
+                                <h5><a href="">Tea Farmer</a></h5>
+                            </div>
+                            <div class="sliderFollowUser">
+                                <a href="#" title="Follow">Follow</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="SliderTopSection" style="background-image: url(images/banner2.png);">
+                                <div class="imgbox5">
+                                    <a href="#"><img src="images/ken.jfif" alt="" width="20"></a>
+                                </div>
+                            </div>
+                            <div class="sliderUserInfo">
+                                <h3><a href="">Naman Mwachofu</a></h3>
+                                <h5><a href="">Maize Farmer</a></h5>
+                            </div>
+                            <div class="sliderFollowUser">
+                                <a href="#" title="Follow">Follow</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="SliderTopSection" style="background-image: url(images/banner3.png);">
+                                <div class="imgbox5">
+                                    <a href="#"><img src="images/ken.jfif" alt="" width="20"></a>
+                                </div>
+                            </div>
+                            <div class="sliderUserInfo">
+                                <h3><a href="">Alice Kioko</a></h3>
+                                <h5><a href="">Mango Farmer</a></h5>
+                            </div>
+                            <div class="sliderFollowUser">
+                                <a href="#" title="Follow">Follow</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="SliderTopSection">
+                                <div class="imgbox5">
+                                    <a href="#"><img src="images/ken.jfif" alt="" width="20"></a>
+                                </div>
+                            </div>
+                           
+                            <div class="sliderUserInfo">
+                                <h3><a href="">Abigael Kahindi</a></h3>
+                                <h5><a href="">Cabbage Farmer</a></h5>
+                            </div>
+                            <div class="sliderFollowUser">
+                                <a href="#" title="Follow">Follow</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="SliderTopSection" style="background-image: url(images/banner3.png);">
+                                <div class="imgbox5">
+                                    <a href="#"><img src="images/ken.jfif" alt="" width="20"></a>
+                                </div>
+                            </div>
+                            <div class="sliderFollowUser">
+
+                            </div>
+                                    </div>
+                                      </div>
+                                 </div>
+                                  </div>
+                            </div>
+                     </div>
+
+            <div class="content">
+                <div class="top_box">
+                    <div class="author_info">
+                        <div class="imgbox">
+                            <img src="images/ken.jfif" alt="">
+                        </div>
+                        <div class="author_name">
+                            <h1>Bruce Wakio</h1>
+                            <h5 class="credential">Sweet Potato Farmer</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/followers.svg" alt="" width="25" title="Follow"></a>
+                </div>
+                <div class="blog_heading">
+                    <h2>Health Benefits of Sweet Potatoes</h2>
+                </div>
+                <div class="blog_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt pariatur, debitis ipsum
+                        facilis id magni maiores laudantium nihil dolorum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis error atque odio architecto,
+                        veniam
+                        ipsam nisi fugiat voluptate itaque unde ea aliquam voluptates eaque et minus temporibus
+                        inventore
+                        maiores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis dolores
+                        veritatis
+                        suscipit deleniti, saepe cumque reprehenderit error aliquid sunt.</p>
+
+                </div>
+                <div class="bottom_box">
+                    <div class="like_box">
+                        <button id="likeButton">Like</button>
+                                <div id="likeCount">0 Likes</div>
+                    </div>
+                    <div class="share_box"><img src="images/share.svg" alt="" width="25" title="share"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="top_box">
+                    <div class="author_info">
+                        <div class="imgbox">
+                            <img src="images/ken.jfif" alt="">
+                        </div>
+                        <div class="author_name">
+                            <h1>Stanly Kiptanui</h1>
+                            <h5 class="credential">Chicken Farmer</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/followers.svg" alt="" width="25" title="Follow"></a>
+                </div>
+                <div class="blog_heading">
+                    <h2>Benefits of Rearing Broilers</h2>
+                </div>
+                <div class="blog_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt pariatur, debitis ipsum
+                        facilis id magni maiores laudantium nihil dolorum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis error atque odio architecto,
+                        veniam
+                        ipsam nisi fugiat voluptate itaque unde ea aliquam voluptates eaque et minus temporibus
+                        inventore
+                        maiores.</p>
+
+                    <img src="images/broilers.jfif" alt="">
+
+                    <p>Sample Surname adkhd awhjkhkj askjhx jhhfj bjkwhrjkfhkjhfejh jhfjeh jkhfjhjkefjk hdjsh kjsdhdfh
+                        kjshd
+                        khewjkfhkj hjhj jkhfjhfjh jwkhjhfjk ewhjfhjhfjh kjshjfegfjagshgj hgfhwej gjfgjw egfjg</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quia repellendus fugiat rem
+                        suscipit ex mollitia, laborum error sunt dolorem culpa impedit nostrum. Maxime autem asperiores
+                    </p>
+                </div>
+                <div class="bottom_box">
+                    <div class="like_box">
+                        <button id="likeButton">Like</button>
+                                <div id="likeCount">0 Likes</div>
+                    </div>
+                    <div class="share_box"><img src="images/share.svg" alt="" width="25" title="share"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rightOfDesktop">
+            <div class="heading_section">
+                <h4>Topics You May Follow</h4>
+                <i class="fa fa-bookmark"></i>
+            </div>
+            <hr>
+            <div class="topic_list">
+                <div class="topicBox">
+                    <div class="author_info">
+                        
+                        <div class="author_name">
+                            <h3>Dairy Farming</h3>
+                            <h5 class="credential">Do you like Cattles?</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="topicBox">
+                    <div class="author_info">
+                        
+                        <div class="author_name">
+                            <h3>Coffee</h3>
+                            <h5 class="credential">All about cofee</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="topicBox">
+                    <div class="author_info">
+                        
+                        <div class="author_name">
+                            <h3>Chicken Rearing</h3>
+                            <h5 class="credential">All about chickens</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="topicBox">
+                    <div class="author_info">
+                        
+                        <div class="author_name">
+                            <h3>Tea Farming</h3>
+                            <h5 class="credential">All about Tea</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="topicBox">
+                    <div class="author_info">
+                        
+                        <div class="author_name">
+                            <h3>Maize Farming</h3>
+                            <h5 class="credential">All about maize</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="topicBox">
+                    <div class="author_info">
+                        <
+                        <div class="author_name">
+                            <h3>Sukuma Wiki Farming</h3>
+                            <h5 class="credential">All about Sukuma wiki farming</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="topicBox">
+                    <div class="author_info">
+                        
+                        <div class="author_name">
+                            <h3>Avocado Farming</h3>
+                            <h5 class="credential">All about avocado farming</h5>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/plus.svg" alt="" width="20" title="Follow" width="30"></a>
+                </div>
+                <div class="loadMoreProfiles">
+                    <h3><a href="#">More Topics...</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="options">
+        <div class="addQuestion">
+            <a href="#" title="Add a Question"><img src="images/plus.svg" alt="" width="45"></a>
+        </div>
+        <div class="addPost">
+            <a href="#" title="Write Post"><img src="images/pencil2.svg" alt="" width="25"></a>
+        </div>
+    </div>
+    <div class="mobileNavbar tabs_container">
+        <div class="home tabs">
+            <a href="#" class=""><i class="fa fa-home" aria-hidden="true" style="font-size: 22px;"></i></a>
+        </div>
+        <div class="questions tabs">
+            <a href="#"><i class="fa fa-edit" aria-hidden="true" style="font-size: 22px;"></i></a>
+        </div>
+        <div class="notifications tabs">
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+        </div>
+        <div class="messages tabs">
+            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+            centeredSlides: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
